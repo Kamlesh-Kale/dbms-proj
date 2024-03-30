@@ -112,14 +112,14 @@ header{
     text-transform: uppercase;
     margin: 0.5rem 0 1.4rem;
 }
-.btn{
+.btn1{
     padding: 7px 16px;
     border: 2px solid var(--second-color);
     border-radius: 40px;
     color: var(--second-color);
     font-weight: 500;
 }
-.btn:hover{
+.btn1:hover{
     color: #fff;
     background: var(--second-color);
 }
@@ -460,3 +460,180 @@ header{
         margin-top: 10px;
     }
 }
+#review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.review-heading{
+    letter-spacing: 1px;
+    margin: 30ox 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.review-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}  
+.container1
+  {
+    position: relative;
+    width: 400px;
+    background: #ebdbc8;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container1 .post
+  {
+    display: none;
+  }
+  .container1 .text
+  {
+    font-size: 25px;
+    color: #202020;
+    font-weight: 500;
+  }
+  .container1 .edit
+  {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #202020;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .container1 .edit:hover
+  {
+    text-decoration: underline;
+  }
+  .container1 .star-widget input
+  {
+    display: none;
+  }
+  .star-widget label
+  {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label
+  {
+    color: #fd4;
+  }
+  input:checked ~ label
+  {
+    color: #fd4;
+  }
+  input#rate-5:checked ~ label
+  {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+  }
+  #rate-1:checked ~ form .header1:before
+  {
+    content: "I just hate it ";
+  }
+  #rate-2:checked ~ form .header1:before
+  {
+    content: "I don't like it ";
+  }
+  #rate-3:checked ~ form .header1:before
+  {
+    content: "It is awesome ";
+  }
+  #rate-4:checked ~ form .header1:before
+  {
+    content: "I just like it ";
+  }
+  #rate-5:checked ~ form .header1:before
+  {
+    content: "I just love it ";
+  }
+  .container1 form
+  {
+    display: none;
+  }
+  input:checked ~ form
+  {
+    display: block;
+  }
+  form .header1
+  {
+    width: 100%;
+    font-size: 25px;
+    color: var(--main-color);
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  form .textarea
+  {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  form .textarea textarea
+  {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000000;
+    border: 1px solid #333;
+    background: #ebdbc8;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+  }
+  .textarea textarea:focus
+  {
+    border-color: #444;
+  }
+  form .btn
+  {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  form .btn button
+  {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: var(--main-color);
+    color: #202020;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form .btn button:hover
+  {
+    background: var(--second-color);
+  }

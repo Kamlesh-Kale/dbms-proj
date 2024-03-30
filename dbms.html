@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="dbms.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
     <body>
         <header>
@@ -27,7 +28,7 @@
                 <span>Welcome To</span>
                 <h1>Starbucks Coffee</h1>
                 <h2>Free Coffee is a <br>tap away</h2>
-                <a href="#" class="btn">Join Now</a>
+                <a href="#" class="btn1">Join Now</a>
             </div>
             <div class="home-img">
                 <img src = "assets/home.png" alt="">
@@ -52,7 +53,7 @@
                    </div>
                    <h2>Starbucks Coffee</h2>
                    <span>$ 12.4</span>
-                   <a href="#" class="btn">Order Now</a>
+                   <a href="#" class="btn1">Order Now</a>
                 </div>
                 <div class="box">
                     <div class="box-image">
@@ -67,7 +68,7 @@
                    </div>
                    <h2>Starbucks Coffee</h2>
                    <span>$ 12.4</span>
-                   <a href="#" class="btn">Order Now</a>
+                   <a href="#" class="btn1">Order Now</a>
                 </div>
                 <div class="box">
                     <div class="box-image">
@@ -82,7 +83,7 @@
                    </div>
                    <h2>Starbucks Coffee</h2>
                    <span>$ 12.4</span>
-                   <a href="#" class="btn">Order Now</a>
+                   <a href="#" class="btn1">Order Now</a>
                 </div>
             </div>
         </section>
@@ -99,7 +100,7 @@
                     <h2>Today deserve delivery</h2>
                     <p>Starbucks is a Seattle-based coffee chain that serves light fare and is known for its signature roasts and Wi-Fi. Some say it's a good place to hang out with friends, and others mention the quality of the drinks.</p>
                     <p>Starbucks has vegan, vegetarian, and gluten-free options. Some say the coffee tasting experience is amazing.</p>
-                    <a href="#" class="btn">Order Now</a>
+                    <a href="#" class="btn1">Order Now</a>
                 </div>
             </div>
         </section>
@@ -113,7 +114,7 @@
                     <h2>Today deserve delivery</h2>
                     <p>Starbucks is a Seattle-based coffee chain that serves light fare and is known for its signature roasts and Wi-Fi. Some say it's a good place to hang out with friends, and others mention the quality of the drinks.</p>
                     <p>Starbucks has vegan, vegetarian, and gluten-free options. Some say the coffee tasting experience is amazing.</p>
-                    <a href="#" class="btn">Get App</a>
+                    <a href="#" class="btn1">Get App</a>
                 </div>
                 <div class="app-img">
                     <img src = "assets/app.png" alt="">
@@ -128,8 +129,56 @@
             <h2>Today deserve delivery</h2>
             <p>Starbucks is a Seattle-based coffee chain that serves light fare and is known for its signature roasts and Wi-Fi. Some say it's a good place to hang out with friends, and others mention the quality of the drinks.</p>
             <p>Starbucks has vegan, vegetarian, and gluten-free options. Some say the coffee tasting experience is amazing.</p>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#" class="btn1">Learn More</a>
         </div>
+        </section>
+        <section class="review" id="review"> 
+            <div class="review-heading">
+                <span>Rate Us</span>
+                <h1>Share your Experience</h1>
+            </div>
+            <div class="container1">
+              <div class="post">
+                <div class="text">Thanks for rating us!</div>
+                <div class="edit">EDIT</div>
+              </div>
+              <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <form action="#">
+                  <div class="header1" id="header1"></div> 
+                  <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Post</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <script>
+              const btn = document.querySelector("button");
+              const post = document.querySelector(".post");
+              const widget = document.querySelector(".star-widget");
+              const editBtn = document.querySelector(".edit");
+              btn.onclick = ()=>{
+                widget.style.display = "none";
+                post.style.display = "block";
+                editBtn.onclick = ()=>{
+                  widget.style.display = "block";
+                  post.style.display = "none";
+                }
+                return false;
+              }
+            </script>
         </section>
         <section id="testimonials">
             <div class="testimonial-heading">
